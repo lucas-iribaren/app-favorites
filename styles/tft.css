@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(252, 205, 78), rgb(250, 163, 68) 15%, rgb(248, 134, 61) 35%, rgb(253, 206, 79) 50%, rgb(251, 102, 79));
+}
+
+@font-face {
+    font-family: 'BeaufortForLOL-Regular';
+    src: url('../polices/beaufort-for-lol/BeaufortforLOL-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'BeaufortForLOL-Bold';
+    src: url('../polices/beaufort-for-lol/BeaufortforLOL-BoldItalic.ttf ') format('truetype');
+    font-weight: bold;
+
+}
+
+h1,
+h2,
+h3,
+.section_presentation,
+header li:nth-child(3) {
+    font-family: 'BeaufortForLOL-Bold', sans-serif;
+}
+
+h1 {
+    font-size: 4.85em;
+    letter-spacing: 0.01em;
+    line-height: 0.8;
+    color: white;
+}
+
+p {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+header {
+    background-color: #111111;
+}
+.nav_header ul:nth-child(1) li{
+    align-items: center;
+    height: 100%;
+    border-radius: 5px;
+    transition: 0.2s ease;
+
+}
+.nav_header ul:nth-child(1) li:hover{
+    background:linear-gradient(rgba(252, 205, 78,0.4), rgba(251, 102, 79,0.4));
+    padding: 10px 5px;
+    transition: 0.2s ease;
+
+}
+.nav_header li:hover {
+    border-bottom: none;
+}
+
+header li:nth-child(3) {
+    font-size: 20px;
+}
+
+.bloc_color {
+    display: none;
+}
+
+main {
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.section_presentation {
+    margin: 50px 0;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    width: 500px;
+}
+
+.content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+
+.lien_free_game {
+    display: inline-flex;
+    margin: 50px 0;
+    padding: 10px 20px;
+    background-color: #39C7FF;
+    color: black !important;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    font-family: 'BeaufortForLOL-Bold', sans-serif;
+
+}
+.lien_free_game:hover {
+    padding: 10px 14px;
+    background-color: #398cff;
+    transition: 0.5s ease;
+}
+
+.content div {
+    display: flex;
+    justify-content: center;
+}
+
+.logo_app {
+    display: block;
+    height: 50px;
+    margin: 0 5px;
+}
+
+.section_fight {
+    display: flex;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+}
+.section_fight p {
+    max-width: 600px;
+    margin: 30px 0 0;
+}
+.portal{
+    height: 550px;
+    position: absolute;
+    top: -30px;
+    left: -250px;
+    z-index: -1;
+}
+
+
+.section_play_where_you_want {
+    display: flex;
+    width: 100%;
+}
+.section_play_where_you_want h1{
+    line-height: 0.95;
+
+}
+.section_play_where_you_want p {
+    
+    max-width: 300px;
+    margin: 30px 0;
+}
+.section_play_where_you_want article{
+    max-width: 50%;
+
+}
+.telephone_container {
+    position: relative;
+    height: 100%;
+    width: auto;
+}
+
+.telephone {
+    display: block;
+    width: 94%;
+    height:95%;
+    border-radius: 30px;
+}
+
+.video_in_telephone {   
+    position: absolute;
+    top: 1%;
+    left: -15px;
+    z-index: -1;
+    width: 100%;
+    height: 92%;
+    object-fit: contain;
+    border-radius: 30px;
+
+}
+
+
+.section_style{
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section_style h1{
+    text-align: center;
+}
+.section_style p{
+    margin: 30px 0;
+    text-align: center;
+}
+.pengu{
+    height: 500px;
+}
+
+.section_how_to_play{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section_how_to_play h1{
+    margin-top: 100px;
+    max-width: 1100px;
+
+}
+.section_how_to_play p{
+    max-width: 500px;
+    margin: 50px 0;
+    
+}
+.section_how_to_play video{
+    padding: 5px;
+    border: white solid 2px;
+}
+
+.section_time_to_play {
+    margin-top: 100px;
+    display:flex;
+    flex-direction: column;
+    align-items: center ;
+    width: 100%;
+}
+.section_time_to_play img{
+        width:100%;
+        display: inline-flex; 
+    }
+
+.section_time_to_play .lien_free_game {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1061px) { 
+    .section_play_where_you_want{
+        flex-direction: column;
+    }
+    .section_play_where_you_want article{
+        max-width: 100%;
+        text-align: center;
+
+    }
+    .section_play_where_you_want p{
+        margin: 30px auto;
+    }
+    .telephone{
+        width: 80%;
+        margin: auto;
+    }
+    .video_in_telephone{
+        left: 11%;    
+        height: 98%;
+        width: 78%;
+        object-fit: cover;
+        border-radius: 50px;
+
+
+    }
+}
